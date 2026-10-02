@@ -1,7 +1,5 @@
 # dsh-memscope
 
-我还没怎么测试过！！！！先别下
-
 Windows x64 的 **DeepSeek Harness 只读进程内存查看插件**。适配 DSH **0.1.7-rc.2**，纯 ESM JavaScript，无构建步骤。
 
 > ## ⚠️ 能力与风险声明，请先读这段
