@@ -1,10 +1,10 @@
 # 本地开发
 
 本插件为 Windows x64、DSH 0.1.7-rc.2 开发，采用纯 ESM JavaScript，无构建步骤。
-GitHub 仓库是私有仓库，克隆时需要该仓库的访问权限。
+GitHub 仓库是公开仓库，可直接克隆，无需访问授权。
 
 ```powershell
-git clone https://github.com/txgz0777/dsh-memscope.git
+git clone https://github.com/TXGZ0777/dsh-memscope.git
 cd dsh-memscope
 npm ci
 ```
