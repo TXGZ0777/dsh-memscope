@@ -1,0 +1,14 @@
+node_modules/
+.npm-cache/
+*.tgz
+*.log
+*.bak
+.env
+.env.*
+
+# 本地官方手册镜像，不属于插件源码。
+docs/
+
+# 内部资料：保留在本地，但不进公开仓库
+dsh-memscope-开发说明.md
+dsh-memscope-v0.1-编程prompt.md

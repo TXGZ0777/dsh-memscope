@@ -1,0 +1,57 @@
+{
+  "name": "dsh-memscope",
+  "version": "0.1.0",
+  "description": "Read-only Windows process memory inspection for DeepSeek Harness: list processes, open a process read-only, and read raw bytes at an address. Windows x64 only; it never writes memory, scans memory, or bypasses process protection.",
+  "type": "module",
+  "main": "lib/index.js",
+  "license": "MIT",
+  "author": "txgz0777",
+  "keywords": [
+    "deepseek",
+    "harness",
+    "dsh",
+    "dsh-plugin",
+    "windows",
+    "process",
+    "memory",
+    "read-only"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/txgz0777/dsh-memscope.git"
+  },
+  "homepage": "https://github.com/txgz0777/dsh-memscope#readme",
+  "bugs": {
+    "url": "https://github.com/txgz0777/dsh-memscope/issues"
+  },
+  "engines": {
+    "dsh": "0.1.7-rc.2"
+  },
+  "files": [
+    "lib/*.js",
+    "cordis.patch.yml"
+  ],
+  "scripts": {
+    "test": "node scripts/smoke-test.js && node scripts/regression.test.js",
+    "preflight": "node scripts/preflight.js",
+    "prepublishOnly": "node scripts/preflight.js && npm test"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "dependencies": {
+    "@deepseek-ai/dsh-lazy-require": "0.1.7-rc.2",
+    "koffi": "^3.3.2"
+  },
+  "peerDependencies": {
+    "@deepseek-ai/dsh-tools": "0.1.7-rc.2"
+  },
+  "devDependencies": {
+    "@deepseek-ai/cordis": "4.0.4",
+    "@deepseek-ai/dsh-system-prompt": "0.1.7-rc.2",
+    "@deepseek-ai/dsh-tools": "0.1.7-rc.2",
+    "yaml": "^2.9.1"
+  }
+}
